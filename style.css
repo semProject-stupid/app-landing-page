@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    border: 3px solid maroon;
+}
+
+.welcome {
+    border: 3px solid yellow;
+}
+
+.app-demo {
+    border: 3px orangered;
+}
+
+.features {
+    border: 3px solid rgb(0, 87, 145);
+}
+
+.types {
+    border: 3px solid magenta;
+}
+
+.operation {
+    border: 3px solid rgb(0, 128, 32);
+}
+
+.pros {
+    border: 3px solid blue;
+}
+
+.survey {
+    border: 3px solid rgb(80, 107, 6);
+}
+
+.footer {
+    border: 3px solid rgb(85, 5, 109);
+}
