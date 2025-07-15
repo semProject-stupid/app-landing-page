@@ -2,6 +2,8 @@ to check:
 -> why webpage not entire screen?
 
 to add:
+-> blinking movement in welcome to spaze, like moving l to r
+-> in welcome, cute animation other than blinking circles 
 
 to fix:
 - why the links arent aligned (privacy policy/app etc) when screen shrinks
@@ -13,3 +15,5 @@ new stuff:
 - align items center in the body (direction column) was keeping the divs from taking up the entire webpage;
 keep it align items stretch
 - max width 100% and flex-wrap: wrap imp!
+- window.location.hash = #id
+- doc.getlementbyId

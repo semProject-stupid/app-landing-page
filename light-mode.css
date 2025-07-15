@@ -3,6 +3,10 @@
     src: url("./fonts/Roboto-VariableFont_wdth\,wght.ttf")
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -18,7 +22,81 @@ body {
 }
 
 .welcome {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    width: 100%;
+
+    background-color: #eafdf1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.welcome .heading {
+    /* border: 3px solid red; */
+    font-size: 40px;
+    font-weight: 800;
+    color: #1f2937;
+
+    /* to check */
+    /* overflow-wrap: break-word; */
+    white-space: normal;
+    max-width: 100%;
+    text-align: center;
+}
+.color {
+    color: #16a34a
+}
+.sub-heading {
+    /* border: 3px solid green; */
+    font-size: 15px;
+    font-weight: 300;
+    color: #1f2937;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.buttons {
+    /* border: 3px solid peru; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.coming-soon-button, .demo-button {
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 2px 4px 10px rgb(182, 179, 179);
+    transition: transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.coming-soon-button:hover, .demo-button:hover {
+    transform: scale(1.05);
+}
+.coming-soon-button {
+    background-color: white;
+    color: #1c8d5a;
+}
+
+.demo-button {
+    background-color: #1c8d5a;
+    color: white;
 }
 
 .app-demo {
@@ -106,6 +184,7 @@ body {
     height: 15px;
     padding: 10px;
     margin-left: 20px;
+    margin-top: 5px;
     font-size: 20px;
     display: inline-flex;
     align-items: center;
@@ -143,7 +222,7 @@ body {
     margin-left: 20px;
 }
 
-.heading {
+.footer-right .right-card .heading {
     /* border: 3px solid orange; */
     min-height: 90px;
     font-weight: 500;
@@ -165,6 +244,11 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     transition: transform 0.05s ease;
+    text-decoration: none;
+}
+.links a:visited {
+    color: white;
+    text-decoration: none;
 }
 .links a:hover {
     color: #06f369;
@@ -183,7 +267,7 @@ hr {
     font-weight: lighter;
     font-size: 14px;
 
-    padding: 50px 20px 20px;
+    /* padding: 50px 20px 20px; */
     max-width: 100%;
 }
 

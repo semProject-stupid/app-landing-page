@@ -27,15 +27,21 @@
 
    <div class="header">
     <button class="toggle-mode" onclick="changeMode()">Sun Icon</button>
-    <a href="./test.html">here</a>
    </div>
-   <div class="welcome"></div>
-   <div class="app-demo"></div>
-   <div class="features"></div>
-   <div class="types"></div>
-   <div class="operation"></div>
-   <div class="pros"></div>
-   <div class="survey"></div>
+   <div class="welcome" id="home">
+        <div class="heading">Welcome to <span class="color">Spaze</span></div>
+        <div class="sub-heading">The Ultimate Sports Arena Booking Platform – Connecting Players with Perfect Venues </div>
+        <div class="buttons">
+            <button class="coming-soon-button" onclick="window.location.hash = '#contact'">Contact Us</button>
+            <button class="demo-button" onclick="window.location.hash = '#app-demo'">Watch Demo</button>
+        </div>
+   </div>
+   <div class="app-demo" id="app-demo">app demo</div>
+   <div class="features" id="features">features</div>
+   <div class="types" id="types">types of sports</div>
+   <div class="operation">operation</div>
+   <div class="pros">pros</div>
+   <div class="survey" id="contact">survey</div>
    <div class="footer">
         <div class="main-footer">
             <div class="footer-left">
@@ -52,11 +58,11 @@
                 <div class="right-card">
                     <div class="heading"><p>Quick Links</p></div>
                     <div class="links">
-                        <a>Home</a>
-                        <a>App Preview</a>
-                        <a>Features</a>
-                        <a>Sports</a>
-                        <a>Contact</a>
+                        <a href="#home">Home</a>
+                        <a href="#app-demo">App Preview</a>
+                        <a href="#features">Features</a>
+                        <a href="#types">Sports</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
                 <div class="right-card">
