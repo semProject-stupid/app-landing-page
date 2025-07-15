@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaze - Your Ultimate Sports Arena Booking Solution</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="light-mode.css" rel="stylesheet" id="theme-mode">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./images/icon.png">
 </head>
 <body>
-   <div class="header"></div>
+    <!-- to toggle between light and dark mode -->
+    <script>
+        let lightMode = true;
+        function changeMode() {
+            const link = document.getElementById('theme-mode');
+            if (lightMode) {
+                link.href = 'dark-mode.css';
+                lightMode = false;
+            }
+            else {
+                link.href = 'light-mode.css';
+                lightMode = true;
+            }
+        }
+    </script>
+
+   <div class="header">
+    <button class="toggle-mode" onclick="changeMode()">Sun Icon</button>
+    <a href="./test.html">here</a>
+   </div>
    <div class="welcome"></div>
    <div class="app-demo"></div>
    <div class="features"></div>
