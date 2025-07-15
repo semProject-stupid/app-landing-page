@@ -14,15 +14,19 @@
         let lightMode = true;
         function changeMode() {
             const link = document.getElementById('theme-mode');
-            const sun_icon = document.querySelector('.toggle-icon');
+            const sun_icon = document.querySelectorAll('.toggle-icon');
             if (lightMode) {
                 link.href = 'dark-mode.css';
-                sun_icon.src = './images/dark-mode-icon.png';
+                sun_icon.forEach(icon => {
+                    icon.src = './images/dark-mode-icon.png';
+                });
                 lightMode = false;
             }
             else {
                 link.href = 'light-mode.css';
-                sun_icon.src = './images/light-mode-icon.png';
+                sun_icon.forEach(icon => {
+                    icon.src = './images/light-mode-icon.png';
+                });
                 lightMode = true;
             }
         }
@@ -113,7 +117,62 @@
         </div>
    </div>
    <div class="types" id="types">types of sports</div>
-   <div class="operation" id="operation">operation</div>
+   <div class="operation" id="operation">
+        <div class="pros-heading">
+            <p class="pros-heading-main">How <span class="color">Spaze</span> Works</p>
+            <p class="pros-heading-sub">Simple steps for players and arena operators to get started</p>
+        </div>
+        <div class="instructions">
+            <div class="player-instructions">
+                <p class="card-heading-main">For Players</p>
+                <div class="instruction">
+                    <p class="number">1</p>
+                    <div>
+                        <p class="card-heading">Download & Register </p>
+                        <p class="card-subheading">Download the Spaze app and create your player profile in minutes.</p>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <p class="number">2</p>
+                    <div>
+                        <p class="card-heading">Find Arenas </p>
+                        <p class="card-subheading">Search for sports arenas near you with advanced filters and real-time availability. </p>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <p class="number">3</p>
+                    <div>
+                        <p class="card-heading">Book & Play </p>
+                        <p class="card-subheading">Book your preferred slot instantly and enjoy your game with peace of mind. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="owner-instructions">
+                <p class="card-heading-main">For Owners</p>
+                <div class="instruction">
+                    <p class="number">1</p>
+                    <div>
+                        <p class="card-heading">Register Arena </p>
+                        <p class="card-subheading">Add your sports arena with photos, amenities, and pricing details. </p>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <p class="number">2</p>
+                    <div>
+                        <p class="card-heading">Manage Bookings </p>
+                        <p class="card-subheading">Control your schedule, set availability, and manage bookings through our dashboard. </p>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <p class="number">3</p>
+                    <div>
+                        <p class="card-heading">Grow Revenue </p>
+                        <p class="card-subheading">Maximize occupancy, reduce empty slots, and grow your business with analytics. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
    <div class="pros">
         <div class="pros-heading">
             <div class="pros-heading-main">
