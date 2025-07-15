@@ -14,19 +14,56 @@
         let lightMode = true;
         function changeMode() {
             const link = document.getElementById('theme-mode');
+            const sun_icon = document.querySelector('.toggle-icon');
             if (lightMode) {
                 link.href = 'dark-mode.css';
+                sun_icon.src = './images/dark-mode-icon.png';
                 lightMode = false;
             }
             else {
                 link.href = 'light-mode.css';
+                sun_icon.src = './images/light-mode-icon.png';
                 lightMode = true;
             }
         }
     </script>
 
    <div class="header">
-    <button class="toggle-mode" onclick="changeMode()">Sun Icon</button>
+        <div class="logo">
+            <img src="./images/icon.png" alt="company logo">
+            <p>Spaze</p>
+        </div>
+        <div class="header-links">
+            <a href="#home">Home</a>
+            <a href="#app-demo">App Preview</a>
+            <a href="#features">Features</a>
+            <a href="#types">Sports</a>
+            <a href="#operation">How It Works</a>
+            <a href="#pros">Benefits</a>
+            <a href="#contact">Join Us</a>
+            <button class="toggle-mode" onclick="changeMode()">
+                <img src="./images/light-mode-icon.png" alt="toggle theme icon" class="toggle-icon">
+            </button>
+        </div>
+        <div class="hamburger">
+            <input type="checkbox" id="hamburger-icon-checkbox" hidden>
+                <div class="header-links collapsed">
+                        <a href="#home">Home</a>
+                        <a href="#app-demo">App Preview</a>
+                        <a href="#features">Features</a>
+                        <a href="#types">Sports</a>
+                        <a href="#operation">How It Works</a>
+                        <a href="#pros">Benefits</a>
+                        <a href="#contact">Join Us</a>
+                        <button class="toggle-mode" onclick="changeMode()">
+                            <img src="./images/light-mode-icon.png" class="toggle-icon">
+                        </button>
+                </div>
+            <label for="hamburger-icon-checkbox">
+                <p class="nav-menu-icon">☰</p>
+                <!-- <img src="./images/hamburger.png" alt="hamburger-collapsing-nav-icon"> -->
+            </label>
+        </div>
    </div>
    <div class="welcome" id="home">
         <div class="heading">Welcome to <span class="color">Spaze</span></div>
@@ -39,7 +76,7 @@
    <div class="app-demo" id="app-demo">app demo</div>
    <div class="features" id="features">features</div>
    <div class="types" id="types">types of sports</div>
-   <div class="operation">operation</div>
+   <div class="operation" id="operation">operation</div>
    <div class="pros">pros</div>
    <div class="survey" id="contact">survey</div>
    <div class="footer">

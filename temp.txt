@@ -7,7 +7,7 @@ to add:
 
 to fix:
 - why the links arent aligned (privacy policy/app etc) when screen shrinks
-- sub-footer text wont wrap properly
+-> sub-footer text wont wrap properly
 -> weird spacing in main footer
 -> footer is breaking when screen narrows (temp fix in footer with width 100% and overflow x hidden; sorry i had forgotten flexwrap on one of the parent divs)
 
@@ -17,3 +17,4 @@ keep it align items stretch
 - max width 100% and flex-wrap: wrap imp!
 - window.location.hash = #id
 - doc.getlementbyId
+- using input id and label for, as well as positioning and ~ selector for collapsing nav menu
