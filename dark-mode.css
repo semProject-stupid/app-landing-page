@@ -55,6 +55,7 @@ body {
 }
 .header-links a {
     text-decoration: none;
+    font-size: 20px;
 }
 .header-links a:visited {
     color: white;
@@ -319,7 +320,10 @@ body {
 
 
 .features {
-    border: 3px solid rgb(0, 87, 145);
+    /* border: 3px solid rgb(0, 87, 145); */
+    background-color: #111827;
+    color: rgb(248, 244, 244);
+    padding-bottom: 20px;
 }
 
 .types {
@@ -393,7 +397,15 @@ body {
 .pros-cards div:hover {
     transform: scale(1.05);
 }
+.bobbing {
+  animation: bob 5s ease-in-out infinite;
+}
 
+@keyframes bob {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 .survey {
     border: 3px solid rgb(80, 107, 6);
 }

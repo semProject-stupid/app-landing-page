@@ -4,6 +4,7 @@ to check:
 to add:
 -> blinking movement in welcome to spaze, like moving l to r
 -> in welcome, cute animation other than blinking circles 
+- the movement of heading and stuff when the page is first loaded
 
 to fix:
 - why the links arent aligned (privacy policy/app etc) when screen shrinks
