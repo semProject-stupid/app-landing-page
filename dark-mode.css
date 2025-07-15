@@ -163,15 +163,21 @@ body {
 }
 .welcome .heading {
     /* border: 3px solid red; */
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 800;
     color: #eafdf1;
+    padding: 5px;
 
     /* to check */
     /* overflow-wrap: break-word; */
     white-space: normal;
     max-width: 100%;
     text-align: center;
+}
+@media (max-width: 340px) {
+    .welcome .heading {
+        font-size: 38px;
+    }
 }
 .color {
     color: #16a34a
@@ -225,8 +231,92 @@ body {
 }
 
 .app-demo {
-    border: 3px orangered;
+    /* border: 3px solid orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    width: 100%;
+    background-color: #d6d8dd;
 }
+.demo-heading {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    width: 100%;
+    margin-top: 10px;
+}
+.demo-heading-main {
+    /* border: 2px solid blue; */
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+.demo-heading-sub {
+    /* border: 2px solid purple; */
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+.images{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 auto;
+    flex-shrink: 1;
+    gap: 40px;
+    padding: 0;
+}
+.images img{
+    /* border: 2px solid magenta; */
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgb(172, 161, 161);
+    margin: 10px;
+    padding: 0;
+}
+@media (max-width: 400px) {
+    .images img {
+        width: 200px;
+        height: auto;
+        
+    }
+}
+@media (max-width: 300px) {
+    .images img {
+        width: 150px;
+        height: auto;
+        
+    }
+}
+.future {
+    /* border: 2px solid magenta;    */
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px;
+}
+.future-subheading {
+    /* border: 2px solid yellow; */
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+}
+
 
 .features {
     border: 3px solid rgb(0, 87, 145);
