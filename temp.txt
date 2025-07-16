@@ -20,3 +20,6 @@ keep it align items stretch
 - window.location.hash = #id
 - doc.getlementbyId
 - using input id and label for, as well as positioning and ~ selector for collapsing nav menu
+- do NOT add fixed widths. containers break. add width 100% then max-width whatever u want
+- using vw and vh 
+- input:focus
